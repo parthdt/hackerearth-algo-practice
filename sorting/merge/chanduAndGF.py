@@ -31,7 +31,6 @@ def merge(left, right, merged):
 
     return merged
 
-arr = [2,5,2,4,3]
-print("Initial array:", arr)
-print("Array after Merge Sort:", merge_sort(arr))
-
+for _ in range(int(input())):
+    size = int(input())
+    print(*merge_sort(list(map(int,input().split())))[::-1])
